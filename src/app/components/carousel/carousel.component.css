@@ -4,4 +4,6 @@
   display: block;
   height: 480px;
   transition: color .125s ease-in-out,border-color .125s ease-in-out;
+  margin-bottom: 20px;
 }
+

@@ -1,0 +1,36 @@
+.item-view{
+  border-top: 1px solid rgb(207, 218, 234);
+}
+.index {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  z-index: 100;
+}
+
+.index h3{
+  display: block;
+  padding: 14px;
+  position: relative;
+  border: 1px solid #cfdaea;
+  width: auto;
+  z-index: 400;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  margin: -1px auto 0;
+  background: #fff;
+  font-size: 1em;
+}
+
+.index h3 a{
+  color: #7dabd1;
+  font-family: 'QuestrialRegular',Arial,Helvetica,sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.index h3 a:hover{
+  color: rgb(255, 82, 105);
+}

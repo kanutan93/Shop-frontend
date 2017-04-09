@@ -1,0 +1,14 @@
+.item{
+  margin-top: 4%;
+}
+.item img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.item-info span{
+  display: block;
+  text-align: center;
+  font-family: "Cutive Mono", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}

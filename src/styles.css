@@ -30,5 +30,19 @@ header .container #logo:hover{
   cursor: pointer;
 }
 
+a, a:link, a:visited{
+  display: block;
+
+  font-size: 1em;
+  font-stretch: normal;
+  font-weight: 200;
+  color: black;
+  text-decoration: none;
+  transition: color .125s ease-in-out,border-color .125s ease-in-out;
+}
+
+a:hover{
+  color: rgb(255, 82, 105);
+}
 
 

@@ -1,3 +1,20 @@
-<p>
-  {{items | async}}
-</p>
+<div class="item-view">
+  <div class="container">
+    <div *ngIf="itemsNumber" class="index">
+      <h3>
+        <a routerLink="shop" title="Feature" href="javascript:void(0)">
+          New from the Shop
+          <span class="icon">→</span>
+        </a>
+      </h3>
+    </div>
+    <div class="row">
+      <div *ngFor="let item of goods" class="col-lg-4 col-md-4 col-sm-12">
+        <item-card [item]="item"></item-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

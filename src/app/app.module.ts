@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './containers/toolbar/toolbar.component';
 import { ItemsViewComponent } from './containers/items-view/items-view.component';
-import { ItemCardComponent } from './containers/item-card/item-card.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
 import { ItemsServiceImpl} from "./services/items/items-impl.service";
 import {ItemsService} from "./services/items/items.service";
 import {Routes, RouterModule} from "@angular/router";

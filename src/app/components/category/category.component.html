@@ -1,3 +1,7 @@
-<ng-container *ngFor="let category of categories">
-  <button class="btn" (click)="changeCategory(category)">{{category}}</button>
-</ng-container>
+<nav>
+  <ul class="shop-menu"  >
+    <li class="shop-menu-item" *ngFor="let category of categories">
+      <a (click)="changeCategory(category)" href="javascript:void(0)">{{category}}</a>
+    </li>
+  </ul>
+</nav>

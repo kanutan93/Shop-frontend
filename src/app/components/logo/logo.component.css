@@ -1,0 +1,21 @@
+.container{
+  background: url(../../../assets/logo/header.png) no-repeat center center;
+  padding-left: 4%;
+  padding-right: 4%;
+  max-width: 1058px;
+  height:150px;
+  margin: 0 auto;
+}
+.container #logo{
+  position: relative;
+  display: block;
+  background: url(../../../assets/logo/logo.png) no-repeat top center;
+  height: 100px;
+  width: 142px;
+  margin: 10px auto;
+}
+
+.container #logo:hover{
+  background-position: bottom;
+  cursor: pointer;
+}

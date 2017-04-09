@@ -1,0 +1,7 @@
+.img-carousel{
+  margin: 0 auto;
+  width: 65%;
+  display: block;
+  height: 480px;
+  transition: color .125s ease-in-out,border-color .125s ease-in-out;
+}

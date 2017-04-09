@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'QuestrialRegular',Arial,Helvetica,sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: baseline;
+  text-align: left;
+  letter-spacing: 2.8px;
+}
+
+header .container{
+  background: url(./assets/logo/header.png) no-repeat center center;
+  padding-left: 4%;
+  padding-right: 4%;
+  max-width: 1058px;
+  height:150px;
+  margin: 0 auto;
+}
+header .container #logo{
+  position: relative;
+  display: block;
+  background: url(./assets/logo/logo.png) no-repeat top center;
+  height: 100px;
+  width: 142px;
+  margin: 10px auto;
+}
+
+header .container #logo:hover{
+  background-position: bottom;
+  cursor: pointer;
+}
+
+
+

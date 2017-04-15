@@ -1,0 +1,27 @@
+<div class="container">
+  <ng-container *ngIf="item">
+    <div class="row">
+      <div class="info col-lg-4 col-md-12">
+        <h1 class="title">{{item.name}}</h1>
+        <div class="product-description">
+          <h5>Desctription</h5>
+          <p>{{item.description}}</p>
+        </div>
+
+        <div class="price">
+          <h5>Order</h5>
+          <span>${{item.price}}.00</span>
+          <span class="quantity">
+						<span class="icon">✕</span>
+						<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+					</span>
+          <button class="button" id="add">Add to cart</button>
+        </div>
+      </div>
+      <div class="image col-lg-8 col-md-12">
+        <img src="../../../assets/cdn/{{item.imageLink}}.jpg"/>
+      </div>
+    </div>
+  </ng-container>
+</div>
+

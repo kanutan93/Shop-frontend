@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <div *ngFor="let item of goods" class="col-lg-4 col-md-4 col-sm-12">
-        <item-card [item]="item"></item-card>
+        <item-card (onInfoClick)="onInfo($event)" [item]="item"></item-card>
       </div>
     </div>
   </div>

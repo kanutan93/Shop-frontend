@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {ItemsService} from "../../services/items/items.service";
 import {Observable} from "rxjs";
 import {Good} from "../../models/Good";
@@ -13,9 +13,8 @@ export class ItemsViewComponent implements OnInit {
   result: Observable<Good[]>;
   goods: Good[];
   @Input() itemsNumber: number;
-  constructor(private itemsService: ItemsService, private route: ActivatedRoute) {
+  constructor(private itemsService: ItemsService, private route: ActivatedRoute, private router: Router) {
     this.route.params.subscribe(res => {
-      console.log(res['id']);
       this.result= this.itemsService.getGoods("", res['id']);
     });
 
@@ -33,4 +32,7 @@ export class ItemsViewComponent implements OnInit {
 
   }
 
+  onInfo(item: Good){
+    this.router.navigate(['/good', item.imageLink])
+  }
 }

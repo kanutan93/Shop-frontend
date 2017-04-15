@@ -6,5 +6,6 @@ export abstract class ItemsService {
 
   constructor(protected httpService: Http) { }
 
-  abstract getGoods(page: string, search?: string): Observable<Good[]>;
+  abstract getGoods(page?: string, search?: string): Observable<Good[]>;
+  abstract fetchGood(name: string): Good;
 }

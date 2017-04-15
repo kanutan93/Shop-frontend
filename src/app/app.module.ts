@@ -17,13 +17,17 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap';
 import { LogoComponent } from './components/logo/logo.component';
+import { ItemInfoComponent } from './containers/item-info/item-info.component';
+import { OrderPieComponent } from './components/order-pie/order-pie.component';
+import { OrderComponent } from './containers/order/order.component';
 
 const routes: Routes =[
   {path: '', component: MainComponent},
   {path: 'shop', component: ItemsViewComponent},
   {path: 'shop/:id', component: ItemsViewComponent},
-  {path: 'good/:id', component: ItemCardComponent},
+  {path: 'good/:id', component: ItemInfoComponent},
   {path: 'faq', component:FaqComponent},
+  {path: 'order', component: OrderComponent},
   {path: 'contact', component:ContactComponent},
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
@@ -38,7 +42,10 @@ const routes: Routes =[
     FaqComponent,
     ContactComponent,
     CarouselComponent,
-    LogoComponent
+    LogoComponent,
+    ItemInfoComponent,
+    OrderPieComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

@@ -20,6 +20,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { ItemInfoComponent } from './containers/item-info/item-info.component';
 import { OrderPieComponent } from './components/order-pie/order-pie.component';
 import { OrderComponent } from './containers/order/order.component';
+import {ShoppingCartService} from "./services/shopping-cart/shopping-cart.service";
 
 const routes: Routes =[
   {path: '', component: MainComponent},
@@ -55,7 +56,8 @@ const routes: Routes =[
     CarouselModule.forRoot()
   ],
   providers: [
-    {provide: ItemsService, useClass: ItemsServiceImpl}
+    {provide: ItemsService, useClass: ItemsServiceImpl},
+    ShoppingCartService
   ],
   bootstrap: [AppComponent]
 })

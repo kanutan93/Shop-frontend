@@ -1,7 +1,56 @@
-<ng-container *ngIf="!items">
-  <h1>SHOPPING CART</h1>
+<div class="container info">
+  <ng-container *ngIf="!items.length;else order">
+    <h1>SHOPPING CART</h1>
     <p>Your shopping cart is empty. Check out our
       <a routerLink="/shop">shop</a>
       to see what's available.
     </p>
-</ng-container>
+  </ng-container>
+  <template #order>
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <table class="table items">
+          <thead>
+          <th>item</th>
+          <th>price</th>
+          <th>quantity</th>
+          <th>total</th>
+          <th>&nbsp;</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of items;">
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.count}}</td>
+            <td>{{item.price * item.count}}</td>
+            <td>
+              <a (click)="removeFromCart(item.name)">x</a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="row">
+          <h4>Customer information</h4>
+          <div class="col-lg-12">
+            <input type="email" placeholder="Email" class="form-control" id="email">
+          </div>
+          <h4>Shipping address</h4>
+          <div class="col-lg-6">
+            <input type="text" placeholder="First name" class="form-control" id="name">
+          </div>
+          <div class="col-lg-6">
+            <input type="text" placeholder="Last name" class="form-control" id="lastname">
+          </div>
+          <div class="col-lg-12">
+            <input type="text" placeholder="Address" class="form-control" id="address">
+          </div>
+        </div>
+        <button class="button" id="checkout" (click)="addToCart(item.name, item.price, count.value)">Checkout</button>
+      </div>
+    </div>
+
+  </template>
+</div>
+

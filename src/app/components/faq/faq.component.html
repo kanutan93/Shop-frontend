@@ -10,16 +10,6 @@
       </div>
     </ng-container>
 
-    <h5 style="text-align: center;">Shirts<a name="brand"></a><a name="hurricane-relief"></a></h5>
-    <ng-container *ngFor="let faq of shirts">
-      <h4 style="text-align: center; text-transform: uppercase" class="active" (click)="toggleFaq(faq)">{{faq.title}}</h4>
-      <div  class="accordion-content" [style.display]="faq.display">
-        <div style="text-align: center;">
-          <span class="description">{{faq.innerText}}</span>
-        </div>
-      </div>
-    </ng-container>
-
     <h5 style="text-align: center;">Store <a name="brand"></a><a name="hurricane-relief"></a></h5>
     <ng-container *ngFor="let faq of store">
       <h4 style="text-align: center; text-transform: uppercase" class="active" (click)="toggleFaq(faq)">{{faq.title}}</h4>

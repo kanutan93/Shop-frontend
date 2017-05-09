@@ -13,9 +13,9 @@
           <span>${{item.price}}.00</span>
           <span class="quantity">
 						<span class="icon">✕</span>
-						<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3">
+						<input min="1" type="number" id="quantity" name="quantity" value="1" size="3" maxlength="3" #count>
 					</span>
-          <button class="button" id="add">Add to cart</button>
+          <button class="button" id="add" (click)="addToCart(item.name, item.price, count.value)">Add to cart</button>
         </div>
       </div>
       <div class="image col-lg-8 col-md-12">

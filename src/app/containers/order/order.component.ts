@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Good} from "../../models/Good";
+import {ShoppingCartService} from "../../services/shopping-cart/shopping-cart.service";
+import {ShoppingCart} from "../../models/ShoppingCart";
 
 @Component({
   selector: 'app-order',
@@ -7,10 +8,20 @@ import {Good} from "../../models/Good";
   styleUrls: ['order.component.css']
 })
 export class OrderComponent implements OnInit {
-  items: Good[];
-  constructor() { }
+  items: ShoppingCart[];
+  constructor(private shoppingCartService: ShoppingCartService) {
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+    this.items = this.shoppingCartService.getItems();
+  }
+
+  removeFromCart(name){
+    this.shoppingCartService.removeFromCart(name);
+    //FIXME В сервисе!
+    this.items = this.items.filter((items) => {
+      return items.name != name;
+    });
+  }
 }

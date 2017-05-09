@@ -6,7 +6,7 @@ import {Component, OnInit, Input} from '@angular/core';
   styleUrls: ['order-pie.component.css']
 })
 export class OrderPieComponent implements OnInit {
-  @Input() countGoods: number = 0;
+  @Input() countGoods: number;
   constructor() { }
 
   ngOnInit() {

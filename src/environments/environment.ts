@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  api: "http://localhost:8180/api/v2/"
+  api: "https://shop-backend.herokuapp.com/api/v2/"
 };

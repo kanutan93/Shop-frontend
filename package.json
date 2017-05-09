@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "heroku-prebuild": "npm install -g http-server",
-    "heroku-postbuild": "ng build --prod --env=prod",
+    "heroku-postbuild": "ng build --prod",
     "start": "http-server dist/",
     "ng": "ng",
     "build": "ng build",
@@ -46,5 +46,8 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
+  },
+  "engines": {
+    "node":"7.6.0"
   }
 }

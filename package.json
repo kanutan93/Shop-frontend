@@ -2,6 +2,7 @@
   "name": "front-shop",
   "version": "0.0.0",
   "license": "MIT",
+  "angular-cli": {},
   "scripts": {
     "heroku-prebuild": "npm install -g http-server",
     "heroku-postbuild": "ng build --prod",

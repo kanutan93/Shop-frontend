@@ -1,6 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {ItemsService} from "../../services/items/items.service";
+import {ItemsService} from "../../services/api/items/items.service";
 import {Observable} from "rxjs";
 import {Good} from "../../models/Good";
 

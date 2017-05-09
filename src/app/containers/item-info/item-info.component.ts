@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {ItemsService} from "../../services/items/items.service";
+import {ItemsService} from "../../services/api/items/items.service";
 import 'rxjs';
 import {Good} from "../../models/Good";
 import {ShoppingCartService} from "../../services/shopping-cart/shopping-cart.service";

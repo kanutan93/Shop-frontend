@@ -38,4 +38,9 @@ export class ShoppingCartService{
     });
     this.items$.next(this.items);
   }
+
+  setNull():void{
+    this.items = [];
+    this.items$.next(this.items);
+  }
 }

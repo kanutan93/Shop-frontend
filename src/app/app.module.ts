@@ -54,7 +54,7 @@ const routes: Routes =[
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {useHash: true}),
     CarouselModule.forRoot(),
     AlertModule.forRoot()
   ],

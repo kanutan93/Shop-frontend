@@ -15,6 +15,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
@@ -23,7 +25,6 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "angular-cli": "1.0.0-beta.26",
     "@types/node": "^6.0.42",
     "core-js": "^2.4.1",
     "ngx-bootstrap": "^1.6.5",

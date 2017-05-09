@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   images: string[] = [
-    'FEATURE-BANNER-REBECCA-CAIRNS.jpg',
-    'Header-Jeremy-Okai-Davis.jpg',
-    'WeWantYou.jpg'
+    'banner5.png',
+    'banner6.png',
+    'banner7.png',
+    'banner8.png',
   ];
   constructor() { }
 

@@ -2,7 +2,8 @@
   margin: 4% 0;
 }
 .item img{
-  max-width: 100%;
+  max-width: 60%;
+  height:410px;
   display: block;
   margin: 0 auto;
 }
